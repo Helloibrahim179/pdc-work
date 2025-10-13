@@ -15,8 +15,8 @@ Multiprocessing Results:
 | 5         | 1.1520 seconds |
 | 10        | 1.3786 seconds |
 | 15        | 1.8513 seconds |
-Comparison Summary
 
+Comparison Summary:
 Multithreading performs much better than Multiprocessing for this particular task, as expected. This is because threads share the same memory space, making them more efficient in terms of time, especially when the task is not computationally heavy.
 
 Multiprocessing uses separate memory spaces for each process, leading to higher memory usage and more time spent on inter-process communication and context switching.
